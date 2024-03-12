@@ -1,0 +1,279 @@
+
+#header{
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 12%;
+}
+
+
+.a{
+    cursor: default;
+}
+
+.a:hover{
+    cursor: pointer;
+}
+
+.product{
+    width: 24px;
+}
+
+.dropdown-item{
+    background: white;
+}
+.dropdown-item:hover{
+    color: #b7a054;
+}
+
+
+.instasearch-term:hover:not(:focus):not(:active){
+    background-color: #690828;
+}
+.instasearch-term:focus{
+    background-color: #690828;
+}
+.instasearch-term:active{
+    background-color: #690828;
+}
+.instasearch-term{
+    color: #b7a054 !important;
+    font-size: .875rem !important;
+}
+.instasearch-term{
+    position: relative;
+    background-color: white;
+}
+
+.form-control{
+    display: block;
+    height: calc(2.5rem + 1px);
+    padding: 0.625rem 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    transition: none;
+    width: 255px;
+}
+
+.button:not(:disabled):not(.disabled){
+    cursor: pointer;
+}
+.reweetIcon, .heartIcon{
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 6px 12px;
+}
+
+.btn-icon{
+    text-align: center;
+    vertical-align: middle;
+    width: calc(2.7rem + 2px);
+    height: calc(2.52rem + 1px);
+    border: none;
+    background: darkgray;
+}
+.button{
+    position: absolute !important;
+    z-index: 1;
+}
+button{
+    overflow: visible;
+}
+.button.btn-icon{
+    left: 72.55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dereption{
+    width: 5%;
+    display: flex;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+
+.icon-cart span{
+    display: flex;
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 222px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-img-top{
+    margin: 10px 0 5px -5px;
+    box-shadow: 6px 8px 10px 4px gray;
+    cursor: pointer;
+    width: 90%;
+} 
+
+/*
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btun{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cartTab .btun button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .btun .close{
+    background-color: #eee;
+}
+*/
+
+.text1{
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.widther{
+    width: 16rem;
+    height: 23rem;
+}
+
+div .card-title{
+    padding-top: 2rem;
+    text-align: justify;
+    line-height: 1.375;
+    font-size: 1.125rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp-3{
+    -webkit-line-clamp: 2;
+}
+
+.btn.note {
+    background-color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.btn.note:hover {
+    background-color: red; /* Màu nền bạn muốn hiển thị khi hover */
+}
+
+.btn.note:focus,
+.btn.note:active {
+    background-color: red; /* Màu nền bạn muốn hiển thị khi click */
+}
+
+
+
+.note{
+    margin-top: 2rem;
+    float: right;
+}
+
+.price{
+    margin-top: 1rem;
+    display: flex;
+    font-weight: 700;
+    color: red;
+}
+
+.mr-2{
+    margin-top: 2rem;
+}
+
+.pt-6{
+    padding-top: 1.5rem;
+}
+
+.text-pink-600{
+    --tw-text-opacity: 1;
+    color: rgb(193 23 124 / var(--tw-text-opacity));
+}
+
+.pr-6{
+    padding-right: 1.5rem;
+}
+
+.pl-4{
+    padding-left: 1rem;
+}
+
+
+.border-pink-600{
+    --tw-border-opacity: 1;
+    border-color: rgb(216 45 139 / var(--tw-border-opacity));
+}
+
+.bg-pink-800{
+    background-color: white;
+}
+
+.rounded-full{
+    border-radius: 9999px;
+}
+
+.mr-1{
+    margin-right: 0.5rem;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(.8,0,1,1)
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,.2,1);
+    }
+  }
+
+.animate-bounce{
+    animation: bounce 1s infinite;
+}
+
+.opacity-80{
+    opacity: .8;
+}
+
+.w-4{
+    width: 1rem;
+}
+
+.h-4{
+    height: 1rem;
+}

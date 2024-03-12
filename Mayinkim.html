@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy in Kim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="banmayin.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Banmayin.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Danh mục sản phẩm
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Mayinlazer.html">Máy in Laser</a></li>
+                      <li><a class="dropdown-item" href="Mayindanang.html">Máy in đa năng</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Mayinmau.html">Máy in màu</a></li>
+                      <li><a class="dropdown-item" href="Mayinkim.html">Máy in kim</a></li>
+                      <li><a class="dropdown-item" href="Mayinscan.html">Máy in scan</a></li>
+                      <li><a class="dropdown-item" href="Mayinphunmau.html">Máy in phun màu</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Lịch sử mua hàng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Góp ý kiến</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Liên hệ</a>
+                  </li>
+                </ul>
+                  <form class="d-flex instasearch-form" role="search" method="get">
+                    <input id="searchInput" class="form-control instasearch-term custom-control" type="text" placeholder="Nhập để tìm sản phẩm" aria-label="Search" data-instasearch="true" data-url="instasearch.html" data-origin="Search/Search">
+                    <button id="searchProduct" class="button btn-primary btn-icon" title="Tìm kiếm" type="submit" onclick="searchProduct()">
+                      <img class="product" src="./Picture/magnifying-glass-solid.svg">
+                    </button>
+                  </form>
+                  <div class="icon-cart dereption">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.3L19 7H7.3"/>
+                    </svg>
+                  <span>0</span>
+                  </div>
+
+             <!--     <div class="cartTab">
+                    <h1>Shopping cart</h1>
+                    <div class="listcart">
+
+                    </div>
+                    <div class="btun">
+                      <button class="close">Đóng</button>
+                      <button class="checkout">Kiểm tra</button>
+                    </div>
+                  </div> -->
+
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="mr-2">
+        <div class="container text-center part">
+            <div class="row">
+              <div class="col">
+                <div class="card widther">
+                  <a href="#">
+                    <img src="./Picture/10041880-may-in-da-chuc-nang-hp-laserjet-pro-mfpm28w-trang-1.jpg" class="card-img-top" alt="Máy In Đa Chức Năng HP LaserJet Pro MFP M28w (W2G55A)">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title line-clamp-3">Máy In Đa Chức Năng HP LaserJet Pro MFP M28w (W2G55A)</h5>
+                    <div class="price">2.000.000đ</div>
+                    <a href="#" class="btn btn-danger note">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card widther">
+                  <a href="#">
+                    <img src="./Picture/10022096-may-in-laser-brother-hl-l2366dw-den-01.jpg" class="card-img-top" alt="Máy in laser Brother HL-L2366DW">
+                  </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Máy in laser Brother HL-L2366DW</h5>
+                    <div class="price">2.000.000đ</div>
+                    <a href="#" class="btn btn-danger note">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card widther">
+                  <a href="#">
+                    <img src="./Picture/10038813-may-in-mau-brother-hl-l3230cdn-trang-1_ckj0-in.jpg" class="card-img-top" alt="Máy in Brother màu HL-L3230CDN">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Máy in Brother màu HL-L3230CDN</h5>
+                    <div class="price">2.000.000đ</div>
+                    <a href="#" class="btn btn-danger note">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card widther">
+                  <a href="#">
+                    <img src="./Picture/10038814-may-in-mau-da-nang-brother-dcp-l3551cdw-trang-1.jpg" class="card-img-top" alt="Máy in Brother màu đa năng DCP-L3551CDW">
+                  </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Máy in Brother màu đa năng DCP-L3551CDW</h5>
+                    <div class="price">2.000.000đ</div>
+                    <a href="#" class="btn btn-danger note">Mua ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- -->
+    <section class="mr-2">
+        <div class="container text-center part">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card widther">
+                      <a href="#">
+                        <img src="./Picture/10041422-may-in-laser-brother-dcp-b7535dw-01.jpg" class="card-img-top" alt="Máy in laser Brother DCP-B7535DW">
+                      </a>
+                        <div class="card-body">
+                        <h5 class="card-title">Máy in laser Brother DCP-B7535DW</h5>
+                        <div class="price">2.000.000đ</div>
+                        <a href="#" class="btn btn-danger note">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card widther">
+                      <a href="#">
+                       <img src="./Picture/10038349-may-in-phun-brother-mfc-t4500dw-1.jpg" class="card-img-top" alt="Máy in phun Brother MFC (T4500DW)">
+                      </a>
+                       <div class="card-body">
+                        <h5 class="card-title">Máy in phun Brother MFC (T4500DW)</h5>
+                        <div class="price">2.000.000đ</div>
+                        <a href="#" class="btn btn-danger note">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 offset-md-3"> <!-- Offset để tạo khoảng trống ở bên phải -->
+                    <!-- Đây là khoảng trống -->
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>
+

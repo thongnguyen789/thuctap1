@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy in | Thiết bị in Chính hãng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="banmayin.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Banmayin.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Danh mục sản phẩm
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Mayinlazer.html">Máy in Laser</a></li>
+                      <li><a class="dropdown-item" href="Mayindanang.html">Máy in đa năng</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Mayinmau.html">Máy in màu</a></li>
+                      <li><a class="dropdown-item" href="Mayinkim.html">Máy in kim</a></li>
+                      <li><a class="dropdown-item" href="Mayinscan.html">Máy in scan</a></li>
+                      <li><a class="dropdown-item" href="Mayinphunmau.html">Máy in phun màu</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Lịch sử mua hàng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Góp ý kiến</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Liên hệ</a>
+                  </li>
+                </ul>
+                  <form class="d-flex instasearch-form" role="search" method="get">
+                    <input id="searchInput" class="form-control instasearch-term custom-control" type="text" placeholder="Nhập để tìm sản phẩm" aria-label="Search" data-instasearch="true" data-url="instasearch.html" data-origin="Search/Search">
+                    <button id="searchProduct" class="button btn-primary btn-icon" title="Tìm kiếm" type="submit" onclick="searchProduct()">
+                      <img class="product" src="./Picture/magnifying-glass-solid.svg">
+                    </button>
+                  </form>
+                  <div class="icon-cart dereption">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.3L19 7H7.3"/>
+                    </svg>
+                  <span>0</span>
+                  </div>
+
+             <!--     <div class="cartTab">
+                    <h1>Shopping cart</h1>
+                    <div class="listcart">
+
+                    </div>
+                    <div class="btun">
+                      <button class="close">Đóng</button>
+                      <button class="checkout">Kiểm tra</button>
+                    </div>
+                  </div> -->
+
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="Máy in Canon 226W">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="Máy in ảnh copy">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="May in hp">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="text1">
+        <p class="font-bold">Các loại sản phẩm cho bạn.</p>
+      </div>
+    </section>
+    <section>
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10054677-may-in-phun-mau-da-nang-epson-l3210-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng Epson L3210">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu đa năng Epson L3210</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10019603-may-in-laser-canon-lbp6030w-trang-01.jpg" class="card-img-top" alt="Máy in laser trắng đen Canon LBP6030W">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser trắng đen Canon LBP6030W</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10000804-may-in-laser-canon-lbp2900-1.jpg" class="card-img-top" alt="Máy in laser Canon LBP2900">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser Canon LBP2900</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10041422-may-in-laser-brother-dcp-b7535dw-01.jpg" class="card-img-top" alt="Máy in laser Brother DCP-B7535DW">
+              </a>
+                <div class="card-body">
+                <h5 class="card-title">Máy in laser Brother DCP-B7535DW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 6 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10051949-may-in-phun-mau-da-nang-hieu-epson-l6190-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng hiệu Epson L6190">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu đa năng hiệu Epson L6190</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10036204-may-in-phun-canon-pixma-g3010-den-01.jpg" class="card-img-top" alt="Máy in phun màu Canon Pixma G3010">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu Canon Pixma G3010</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10045531-may-in-den-trang-hp-laser-107w-4zb78a-1_w5nv-ug.jpg" class="card-img-top" alt="Máy in laser HP 107W 4ZB78A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser HP 107W 4ZB78A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10003808-may-in-laser-da-nang-canon-mf3010-den-01.jpg" class="card-img-top" alt="Máy in laser đa năng Canon MF3010">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser đa năng Canon MF3010</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 8 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10051538-may-in-phun-mau-canon-g1020-1.jpg" class="card-img-top" alt="Máy in phun màu Canon G1020">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu Canon G1020</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10056174-may-in-phun-mau-da-nang-hp-smart-tank-580-wifi-1f3y2a-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng HP Smart Tank 580 Wifi (1F3Y2A)">
+              </a>
+                <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in phun màu đa năng HP Smart Tank 580 Wifi (1F3Y2A)</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10038814-may-in-mau-da-nang-brother-dcp-l3551cdw-trang-1.jpg" class="card-img-top" alt="Máy in Brother màu đa năng DCP-L3551CDW">
+              </a>
+                <div class="card-body">
+                <h5 class="card-title">Máy in Brother màu đa năng DCP-L3551CDW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10047449-may-in-da-nang-hp-laser-mfp-137fnw-4zb84a.jpg" class="card-img-top" alt="Máy in đa năng HP Laser MFP 137fnw 4ZB84A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in đa năng HP Laser MFP 137fnw 4ZB84A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 12 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10052645-may-in-hp-laserjet-m211d-9yf82a-1.jpg" class="card-img-top" alt="Máy in HP LaserJet M211D 9YF82A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in HP LaserJet M211D 9YF82A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10022865-may-in-laser-da-nang-brother-mfc-l2701dw-den-1.jpg" class="card-img-top" alt="Máy in laser đa năng Brother MFC-L2701DW">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser đa năng Brother MFC-L2701DW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10029177-may-in-laser-brother-dcp-l2520d.jpg" class="card-img-top" alt="Máy in laser Brother DCP-L2520D">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser Brother DCP-L2520D</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10020148-may-in-laser-brother-hl-l2321d-den-1.jpg" class="card-img-top" alt="Máy in laser Brother HL-L2321D">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser Brother HL-L2321D</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 16 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10051540-may-in-phun-mau-canon-g3020-1.jpg" class="card-img-top" alt="Máy in phun màu Canon G3020">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu Canon G3020</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10050004-may-in-phun-mau-canon-g570-1.jpg" class="card-img-top" alt="Máy in phun màu Canon G570">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in phun màu Canon G570</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10036181-may-in-phun-mau-canon-pixma-g1010-den-1_-_Copy.jpg" class="card-img-top" alt="Máy in phun màu Canon PIXMA G1010">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu Canon PIXMA G1010</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10018930-may-in-laser-brother-hl-l2361d-den-1.jpg" class="card-img-top" alt="Máy in laser Brother HL-L2361DN">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser Brother HL-L2361DN</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 20 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10041880-may-in-da-chuc-nang-hp-laserjet-pro-mfpm28w-trang-1.jpg" class="card-img-top" alt="Máy In Đa Chức Năng HP LaserJet Pro MFP M28w (W2G55A)">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy In Đa Chức Năng HP LaserJet Pro MFP M28w (W2G55A)</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10049312-may-in-phun-da-nang-brother-mfc-t920dw-1.jpg" class="card-img-top" alt="Máy in phun đa năng Brother MFC-T920DW">
+              </a>
+                <div class="card-body">
+                <h5 class="card-title">Máy in phun đa năng Brother MFC-T920DW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10038349-may-in-phun-brother-mfc-t4500dw-1.jpg" class="card-img-top" alt="Máy in phun Brother MFC (T4500DW)">
+              </a>
+               <div class="card-body">
+                <h5 class="card-title">Máy in phun Brother MFC (T4500DW)</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10038813-may-in-mau-brother-hl-l3230cdn-trang-1_ckj0-in.jpg" class="card-img-top" alt="Máy in Brother màu HL-L3230CDN">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in Brother màu HL-L3230CDN</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 24 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10056811-may-in-phun-da-nang-brother-dcp-t226-1.jpg" class="card-img-top" alt="Máy in phun đa năng Brother DCP-T226">
+              </a>
+                <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in phun đa năng Brother DCP-T226</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10022096-may-in-laser-brother-hl-l2366dw-den-01.jpg" class="card-img-top" alt="Máy in laser Brother HL-L2366DW">
+              </a>
+                <div class="card-body">
+                <h5 class="card-title">Máy in laser Brother HL-L2366DW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10052646-may-in-hp-laserjet-m211dw-9yf83a-1.jpg" class="card-img-top" alt="Máy in HP LaserJet M211DW 9YF83A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in HP LaserJet M211DW 9YF83A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10049311-may-in-phun-da-nang-brother-dcp-t720dw-1_8srj-4n.jpg" class="card-img-top" alt="Máy in phun đa năng Brother DCP-T720DW">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun đa năng Brother DCP-T720DW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 28 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a hre="#">
+                <img src="./Picture/10049310-may-in-phun-da-nang-brother-dcp-t220-1_v0cg-9v.jpg" class="card-img-top" alt="Máy in phun đa năng Brother DCP-T220">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in phun đa năng Brother DCP-T220</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10048561-may-in-laser-trang-den-hp-107a-4zb77a-1.jpg" class="card-img-top" alt="Máy in laser trắng đen HP 107A-4ZB77A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in laser trắng đen HP 107A-4ZB77A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10047451-may-in-mau-hp-color-laser-150nw-4zb95a-01.jpg" class="card-img-top" alt="Máy in màu HP Color Laser 150NW-4ZB95A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in màu HP Color Laser 150NW-4ZB95A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10051951-may-in-phun-mau-da-nang-hieu-epson-l850-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng hiệu Epson L850">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu đa năng hiệu Epson L850</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 32 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10022864-may-in-laser-da-nang-brother-mfc-l2701d-den-1.jpg" class="card-img-top" alt="Máy in laser Brother MFC-L2701D">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in laser Brother MFC-L2701D</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/283.jpg" class="card-img-top" alt="Máy in đa chức năng Brother MFC-L3750CDW">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in đa chức năng Brother MFC-L3750CDW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10045532-may-in-da-nang-hp-laser-135w-4zb83a-01.jpg" class="card-img-top" alt="Máy in đa năng HP Laser 135W 4ZB83A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in đa năng HP Laser 135W 4ZB83A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10036203-may-in-phun-mau-da-nang-canon-pixma-g2010-den-01.jpg" class="card-img-top" alt="Máy in phun màu đa năng Canon Pixma G2010">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu đa năng Canon Pixma G2010</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 36 -->
+    <section class="mr-2">
+      <div class="container text-center part">
+        <div class="row">
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10049469-may-in-phun-mau-da-nang-in-scan-copy-brother-dcp-t820dw-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng In-Scan-Copy Brother DCP-T820DW">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in phun màu đa năng In-Scan-Copy Brother DCP-T820DW</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10049468-may-in-phun-mau-da-nang-in-scan-copy-brother-dcp-t520w-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng In-Scan-Copy Brother DCP-T520W">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in phun màu đa năng In-Scan-Copy Brother DCP-T520W</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+                <img src="./Picture/10047448-may-in-da-nang-hp-laser-mfp-135a-4zb82a-01.jpg" class="card-img-top" alt="Máy in laser trắng đen đa chức năng HP 135A-4ZB82A">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title line-clamp-3">Máy in laser trắng đen đa chức năng HP 135A-4ZB82A</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card widther">
+              <a href="#">
+               <img src="./Picture/10054678-may-in-phun-mau-da-nang-epson-l3250-1.jpg" class="card-img-top" alt="Máy in phun màu đa năng Epson L3250">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Máy in phun màu đa năng Epson L3250</h5>
+                <div class="price">2.000.000đ</div>
+                <a href="#" class="btn btn-danger note">Mua ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="pt-6 text-center">
+			<button class="rounded-full border border-pink-600 py-1 pl-4 pr-6 text-pink-600 bg-pink-800" id="btnMore">
+				<svg xmlns="http://www.w3.org/2000/svg" class="mr-1 inline-block h-4 w-4 animate-bounce opacity-80" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+				</svg>Xem thêm
+			</button>
+      <button class="rounded-full border border-pink-600 py-1 pl-4 pr-6 text-pink-600 bg-pink-800" id="btnLess">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1 inline-block h-4 w-4 animate-bounce opacity-80" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M16.707 9.707a1 1 0 11-1.414 1.414L11 7.414V17a1 1 0 11-2 0V7.414L4.707 11.12a1 1 0 01-1.414-1.414l6-6a1 1 0 011.414 0l6 6z" clip-rule="evenodd"></path>
+      </svg>Gút gọn
+      </button>
+		</div>
+
+
+
+    <footer>
+      Copyright ©  2024 Công ty Cổ phần Thương mại An Giang.
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
